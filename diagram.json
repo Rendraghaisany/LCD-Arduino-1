@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "author": "144HZ",
+    "editor": "wokwi",
+    "parts": [
+      { "type": "wokwi-arduino-uno", "id": "uno", "top": -2562.6, "left": 15263.4, "attrs": {} },
+      {
+        "type": "wokwi-lcd1602",
+        "id": "lcd1",
+        "top": -2816,
+        "left": 15432.8,
+        "attrs": { "pins": "i2c" }
+      }
+    ],
+    "connections": [
+      [ "lcd1:GND", "uno:GND.3", "black", [ "h-230.4", "v460.8", "h259.2" ] ],
+      [ "lcd1:VCC", "uno:5V", "red", [ "h-201.6", "v422.5", "h28.8" ] ],
+      [ "lcd1:SDA", "uno:A4.2", "yellow", [ "h0" ] ],
+      [ "lcd1:SCL", "uno:A5.2", "cyan", [ "h0" ] ]
+    ],
+    "dependencies": {}
+  }
